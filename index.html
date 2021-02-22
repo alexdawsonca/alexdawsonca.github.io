@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Alexander Dawson" />
+        <meta name="copyright" content="Copyright © 2021, Alexander Dawson. All rights reserved." />
+        <title>alexdawson.ca</title>
+        <link rel="icon" href="data/images/icon.ico" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="data/galleria/galleria.min.js"></script>
+        
+        <style type='text/css'>
+            body
+            {
+                margin:0;
+                
+                background:#58728a;
+                background-image:url("data/images/winterHeaderBg.jpg");
+                background-repeat:no-repeat;
+                background-position:center top;
+                background-size:cover;
+                background-attachment:fixed;
+                
+                font:normal 1em georgia,serif;
+                color:#bbb;
+            }
+            
+            #left
+            {
+                width: 70vw;
+                height: 100vh;
+                min-width:320px;
+                float:left;
+            }
+            
+            #right
+            {
+                width:30vw;
+                height:100vh;
+                min-width:300px;
+                min-height:42em;
+                margin-left:auto;
+                text-align:center;
+                background-color:rgba(0,0,0,0.85);
+            }
+            
+            #bio
+            {
+                padding:1.5em 0.75em 0.75em 0.75em;
+            }
+            
+            #links
+            {
+                padding:0em 0.75em 0.75em 0.75em;
+            }
+            
+            #copyright
+            {
+                width:30vw;
+                position:absolute;
+                bottom:0;
+                right:0;
+            }
+            
+            a
+            {
+                color:#FFFFFF;
+                font-style:italic;
+            }
+            
+            a:link
+            {
+                text-decoration:none;
+            }
+              
+            a:visited
+            {
+                text-decoration:none;
+            }
+            
+            a:hover
+            {
+                text-decoration:underline;
+            }
+            
+            a img
+            {
+                border:none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="left" class="galleria">
+            <script>
+                var data =
+                [
+                    {
+                        video: 'https://www.youtube.com/watch?v=ncC9jrCqgG8',
+                        description: '<a href="http://www.ionfury.com/">Ion Fury</a><br />Graphics, Engine, and Console Port Programming',
+                        link: 'http://www.ionfury.com/'
+                    },
+                    {
+                        video: 'https://www.youtube.com/watch?v=dVjVjKY7gLw',
+                        description: '<a href="https://devpost.com/software/fall">Fall</a><br />An introspective exploration game about falling down.<br />A <a href="https://devpost.com/software/fall">prototype</a> was created for the Oculus Mobile VRJam 2015. A full version is currently in development.'
+                    },
+                    {
+                        image: 'data/images/peeper/peeperShot1.png',
+                        thumb: 'data/images/peeper/peeperThumb1.png',
+                        link: 'https://gamejolt.com/games/peeper/107387',
+                        description: '<a href="https://gamejolt.com/games/peeper/107387">Peeper</a><br />Trapped in an otherworldly apartment building, spying through peepholes may be your only way out.<br />A horror game created in 2 days for Asylum Jam 2015. A full version is currently in development.'
+                    },
+                    {
+                        video: 'https://www.youtube.com/watch?v=JOGsl1J4iuM',
+                        description: '<a href="https://www.simianmind.com/">Aliens Above!</a><br />Use your tractor beam to save the aliens while pulling and throwing everything in a destructable world.'
+                    }
+                ];
+                
+                Galleria.loadTheme('data/galleria/themes/classic/galleria.classic.js');
+                Galleria.run('.galleria',  { dataSource: data, _toggleInfo: false });
+            </script>
+        </div>
+        <div id="right">
+            <div id="bio">
+                <a href="https://twitter.com/alexdawsonca"><img src="data/images/twitterIcoCropNew_small.png" style="border:3px solid white; border-radius:5px"></a><br />
+                <p style="margin:0.5em 0 0.75em 0;"><a style="font:normal bold 1.4em georgia,serif;" href="https://twitter.com/alexdawsonca">Alex Dawson</a></p>
+                <p>
+                    Quiet Canadian game maker & artist<br />
+                    <br />
+                    Currently working on <a href="http://devpost.com/software/fall">Fall</a> and <a href="http://gamejolt.com/games/peeper/107387">Peeper</a>.
+                </p>
+            </div>
+            <div id="links">
+                <a href="https://twitter.com/alexdawsonca"><img src="data/images/Twitter_logo_blue_60.png"></a>
+                <a href="http://devpost.com/alexdawsonca"><img src="data/images/devpostIcon.png"></a>
+                <a href="http://gamejolt.com/profile/alexdawsonca/1038387/games"><img src="data/images/gameJoltIcon.png"></a>
+                <a href="https://www.youtube.com/user/alexdawsonca/videos"><img src="data/images/youtubeIcon.png"></a>
+            </div>
+            <div id="copyright">
+                <p style="font:normal 0.6em georgia,serif;padding:0 0.7em 0 0.7em">
+                    Copyright © 2013-2021, Alexander Dawson.<br />
+                    Ion Fury is copyright © 3D Realms & Voidpoint LLC.<br />
+                    3D Realms™, Ion Fury™, Bombshell™ are registered trademarks<br />
+                    of 3D Realms Entertainment APS.<br />
+                    Aliens Above! is copyright © 2013, Simian Mind.<br />
+                    Game content is displayed with permission.<br />
+                    All rights reserved.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

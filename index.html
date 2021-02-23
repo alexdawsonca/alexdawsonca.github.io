@@ -5,6 +5,7 @@
         <meta name="copyright" content="Copyright © 2021, Alexander Dawson. All rights reserved." />
         <title>alexdawson.ca</title>
         <link rel="icon" href="data/images/icon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <script src="data/galleria/galleria.min.js"></script>
@@ -27,19 +28,19 @@
             
             #left
             {
-                width: 70vw;
-                height: 100vh;
-                min-width:320px;
-                float:left;
+                width:70vw;
+                height:100vh;
+                position:fixed;
+                top:0;
+                left:0;
             }
             
             #right
             {
                 width:30vw;
-                height:100vh;
-                min-width:300px;
-                min-height:42em;
-                margin-left:auto;
+                height:100%;
+                min-height:100vh;
+                margin-left:70vw;
                 text-align:center;
                 background-color:rgba(0,0,0,0.85);
             }
@@ -57,9 +58,7 @@
             #copyright
             {
                 width:30vw;
-                position:absolute;
-                bottom:0;
-                right:0;
+                padding-top:calc(100vh - 26.3em);
             }
             
             a
@@ -127,17 +126,17 @@
                 <p>
                     Quiet Canadian game maker & artist<br />
                     <br />
-                    Currently working on <a href="http://devpost.com/software/fall">Fall</a> and <a href="http://gamejolt.com/games/peeper/107387">Peeper</a>.
+                    Currently working on <a href="https://devpost.com/software/fall">Fall</a> and <a href="https://gamejolt.com/games/peeper/107387">Peeper</a>.
                 </p>
             </div>
             <div id="links">
                 <a href="https://twitter.com/alexdawsonca"><img src="data/images/Twitter_logo_blue_60.png"></a>
-                <a href="http://devpost.com/alexdawsonca"><img src="data/images/devpostIcon.png"></a>
-                <a href="http://gamejolt.com/profile/alexdawsonca/1038387/games"><img src="data/images/gameJoltIcon.png"></a>
+                <a href="https://devpost.com/alexdawsonca"><img src="data/images/devpostIcon.png"></a>
+                <a href="https://gamejolt.com/profile/alexdawsonca/1038387/games"><img src="data/images/gameJoltIcon.png"></a>
                 <a href="https://www.youtube.com/user/alexdawsonca/videos"><img src="data/images/youtubeIcon.png"></a>
             </div>
             <div id="copyright">
-                <p style="font:normal 0.6em georgia,serif;padding:0 0.7em 0 0.7em">
+                <p style="font:normal 0.6em georgia,serif;padding:0 0.7em 1em 0.7em;margin-bottom:0;">
                     Copyright © 2013-2021, Alexander Dawson.<br />
                     Ion Fury is copyright © 3D Realms & Voidpoint LLC.<br />
                     3D Realms™, Ion Fury™, Bombshell™ are registered trademarks<br />
